@@ -1,0 +1,17 @@
+.code-snippet-container {
+    display: block;
+    padding-bottom: 3rem;
+    height: 100%;
+    background-color: inherit;
+}
+
+pre {
+    margin: 1rem;
+}
+
+code {
+    padding: 0 !important;
+    border-radius: .5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}

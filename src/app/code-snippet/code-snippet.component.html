@@ -1,0 +1,47 @@
+<div class="code-snippet-container">
+    <div style="margin-top: 1rem"></div>
+
+    <!-- Typescript Code Snippet -->
+    <h2 style="margin: 2rem">app.component.ts</h2>
+
+    <pre><code class="language-ts">
+    export class AppComponent &#123;
+
+        constructor(
+            private iconRegistry: MatIconRegistry,
+            private sanitizer: DomSanitizer
+        ) &#123;
+
+            this.iconRegistry.addSvgIcon(
+                'my-star',
+                this.sanitizer.bypassSecurityTrustResourceUrl('assets/star.svg')
+            );
+
+        }
+    }
+    </code></pre>
+
+    <div style="margin-top: 1rem"></div>
+
+    <!-- HTML Code Snippet -->
+    <h2 style="margin: 2rem">app.component.html</h2>
+
+    <pre><code class="language-html">
+    &lt;mat-icon svgIcon="my-star">&lt;/mat-icon>
+    </code></pre>
+
+    <!-- CSS Code Snippet -->
+    <h2 style="margin: 2rem">styles.scss</h2>
+
+    <pre><code class="language-scss">
+    .mat-primary path,
+    .mat-accent path,
+    .mat-warn path,
+    .dark path,
+    .dark .mat-primary path,
+    .dark .mat-accent path,
+    .dark .mat-warn path &#123;
+        fill: inherit !important;
+    }
+    </code></pre>
+</div>
